@@ -1,0 +1,20 @@
+This directory contains images for the CNC Solutions website.
+
+Required images:
+1. hero-bg.jpg - A high-quality image of a CNC machine or workshop for the hero banner
+2. workshop.jpg - An image of the CNC workshop for the About section
+3. equipment/mill.jpg - Image of a CNC mill
+4. equipment/lathe.jpg - Image of a CNC lathe
+5. equipment/cmm.jpg - Image of a Coordinate Measuring Machine
+6. equipment/cadcam.jpg - Image of CAD/CAM systems or software
+7. testimonials/client1.jpg - Professional headshot of a client
+8. testimonials/client2.jpg - Professional headshot of a client
+9. testimonials/client3.jpg - Professional headshot of a client
+10. portfolio/aerospace1.jpg - Image of an aerospace CNC part
+11. portfolio/aerospace2.jpg - Image of an aerospace CNC part
+12. portfolio/automotive1.jpg - Image of an automotive CNC part
+13. portfolio/automotive2.jpg - Image of an automotive CNC part
+14. portfolio/medical1.jpg - Image of a medical device CNC part
+15. portfolio/industrial1.jpg - Image of an industrial CNC part
+
+Replace these with your own professional CNC-related images when customizing the site.

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional CNC Machining Services - Precision engineering solutions for all your manufacturing needs">
+    <title>Precision CNC Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Precision CNC Solutions</h1>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" id="menuClose"></i>
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#equipment">Equipment</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" id="menuOpen"></i>
+            </div>
+        </nav>
+
+        <div class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Precision Engineering Excellence</h1>
+                    <p>State-of-the-art CNC machining services for your most demanding projects</p>
+                    <a href="#contact" class="btn btn-primary">Get a Quote</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive CNC machining solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>CNC Milling</h3>
+                    <p>Precision milling services for complex parts with tight tolerances in various materials.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>CNC Turning</h3>
+                    <p>High-quality turning operations for cylindrical parts with superior finish and accuracy.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>Design Services</h3>
+                    <p>Expert CAD/CAM design and consultation to optimize your parts for manufacturability.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3>Prototyping</h3>
+                    <p>Rapid prototyping services to bring your concepts to reality with quick turnaround times.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Production Runs</h3>
+                    <p>Large-scale production capabilities with consistent quality and on-time delivery.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Quality Inspection</h3>
+                    <p>Comprehensive quality control processes ensuring parts meet exact specifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about section-padding bg-light" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/workshop.jpg" alt="CNC Workshop" class="img-fluid">
+                </div>
+                <div class="about-content">
+                    <div class="section-header text-left">
+                        <h2>About Us</h2>
+                        <p>Your trusted partner in precision manufacturing</p>
+                    </div>
+                    <p>With over 15 years of experience in the CNC machining industry, Precision CNC Solutions has established itself as a leader in delivering high-quality machined components for various sectors including aerospace, automotive, medical, and industrial applications.</p>
+                    <p>Our team of skilled engineers and machinists is committed to excellence, using the latest technology and best practices to ensure your parts are manufactured to the highest standards.</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-text">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-text">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99%</span>
+                            <span class="stat-text">Customer Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio section-padding" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Work</h2>
+                <p>Examples of precision parts we've manufactured</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="aerospace">Aerospace</button>
+                <button class="filter-btn" data-filter="automotive">Automotive</button>
+                <button class="filter-btn" data-filter="medical">Medical</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item aerospace">
+                    <img src="images/portfolio/aerospace1.jpg" alt="Aerospace Component">
+                    <div class="portfolio-overlay">
+                        <h3>Aerospace Component</h3>
+                        <p>Titanium alloy with precision tolerances of ±0.001"</p>
+                    </div>
+                </div>
+                <div class="portfolio-item automotive">
+                    <img src="images/portfolio/automotive1.jpg" alt="Engine Component">
+                    <div class="portfolio-overlay">
+                        <h3>Engine Component</h3>
+                        <p>High-strength aluminum for performance applications</p>
+                    </div>
+                </div>
+                <div class="portfolio-item medical">
+                    <img src="images/portfolio/medical1.jpg" alt="Medical Device Part">
+                    <div class="portfolio-overlay">
+                        <h3>Medical Device Component</h3>
+                        <p>Surgical-grade stainless steel with complex features</p>
+                    </div>
+                </div>
+                <div class="portfolio-item industrial">
+                    <img src="images/portfolio/industrial1.jpg" alt="Industrial Component">
+                    <div class="portfolio-overlay">
+                        <h3>Industrial Machine Part</h3>
+                        <p>Heavy-duty steel component for manufacturing equipment</p>
+                    </div>
+                </div>
+                <div class="portfolio-item aerospace">
+                    <img src="images/portfolio/aerospace2.jpg" alt="Aerospace Bracket">
+                    <div class="portfolio-overlay">
+                        <h3>Aerospace Mounting Bracket</h3>
+                        <p>Lightweight yet strong aluminum alloy structure</p>
+                    </div>
+                </div>
+                <div class="portfolio-item automotive">
+                    <img src="images/portfolio/automotive2.jpg" alt="Transmission Part">
+                    <div class="portfolio-overlay">
+                        <h3>Transmission Component</h3>
+                        <p>Precision-machined gear for high-performance vehicles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipment section-padding bg-light" id="equipment">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Equipment</h2>
+                <p>State-of-the-art machinery for superior results</p>
+            </div>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <img src="images/equipment/mill.jpg" alt="CNC Mill">
+                    <h3>5-Axis CNC Mills</h3>
+                    <p>Haas VF-5SS and DMG MORI DMU 50 with advanced control systems for complex geometries.</p>
+                </div>
+                <div class="equipment-card">
+                    <img src="images/equipment/lathe.jpg" alt="CNC Lathe">
+                    <h3>CNC Lathes</h3>
+                    <p>Okuma LB3000 EX and Haas ST-20 for precision turning operations up to 20" diameter.</p>
+                </div>
+                <div class="equipment-card">
+                    <img src="images/equipment/cmm.jpg" alt="CMM">
+                    <h3>Coordinate Measuring Machines</h3>
+                    <p>Zeiss CONTURA G2 with VAST XXT scanning for quality inspection with accuracy to 0.0001".</p>
+                </div>
+                <div class="equipment-card">
+                    <img src="images/equipment/cadcam.jpg" alt="CAD/CAM System">
+                    <h3>Advanced CAD/CAM Systems</h3>
+                    <p>Mastercam, SolidWorks, and Autodesk Fusion 360 for design and manufacturing integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by industry leaders</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Precision CNC Solutions has been our go-to partner for complex machined parts. Their attention to detail and commitment to quality is unmatched in the industry."</p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <img src="images/testimonials/client1.jpg" alt="Client">
+                        <div>
+                            <h4>Michael Johnson</h4>
+                            <p>Procurement Manager, Aerospace Systems Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"We've worked with many CNC shops, but none have matched the precision and consistency that we get from this team. Their ability to meet tight deadlines without sacrificing quality is impressive."</p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <img src="images/testimonials/client2.jpg" alt="Client">
+                        <div>
+                            <h4>Sarah Thompson</h4>
+                            <p>Engineering Director, Medical Innovations LLC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"From prototyping to production, their expertise has been invaluable to our product development process. Their engineering suggestions have saved us time and money."</p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <img src="images/testimonials/client3.jpg" alt="Client">
+                        <div>
+                            <h4>David Chen</h4>
+                            <p>Product Development Manager, Automotive Excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section-padding bg-dark" id="contact">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Contact Us</h2>
+                <p>Get in touch for a quote or consultation</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Our Location</h3>
+                            <p>123 Manufacturing Way<br>Industrial District<br>Anytown, ST 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@precisioncncsolutions.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service">
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="milling">CNC Milling</option>
+                                <option value="turning">CNC Turning</option>
+                                <option value="design">Design Services</option>
+                                <option value="prototyping">Prototyping</option>
+                                <option value="production">Production Runs</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Precision CNC Solutions</h3>
+                    <p>Delivering exceptional machining services with precision, quality, and reliability since 2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#equipment">Equipment</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">CNC Milling</a></li>
+                        <li><a href="#services">CNC Turning</a></li>
+                        <li><a href="#services">Design Services</a></li>
+                        <li><a href="#services">Prototyping</a></li>
+                        <li><a href="#services">Production Runs</a></li>
+                        <li><a href="#services">Quality Inspection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates on new capabilities and industry insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Precision CNC Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

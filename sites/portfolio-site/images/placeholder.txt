@@ -1,0 +1,12 @@
+This directory contains images for the portfolio website.
+
+Required images:
+1. profile.jpg - A professional headshot or profile picture
+2. portfolio/project1.jpg - Portfolio project image
+3. portfolio/project2.jpg - Portfolio project image
+4. portfolio/project3.jpg - Portfolio project image
+5. portfolio/project4.jpg - Portfolio project image
+6. portfolio/project5.jpg - Portfolio project image
+7. portfolio/project6.jpg - Portfolio project image
+
+Replace these with your own images when customizing the site.

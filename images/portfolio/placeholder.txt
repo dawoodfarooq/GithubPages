@@ -1,0 +1,2 @@
+Place images of your CNC machined products and parts here.
+Name them consistently (e.g., aerospace1.jpg, automotive1.jpg, etc.) to match the HTML structure.
