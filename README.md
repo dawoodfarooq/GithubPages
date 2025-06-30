@@ -1,78 +1,109 @@
-# Multiple Websites on GitHub Pages
+# GitHub Pages CNC Solutions Website
 
-This repository contains multiple websites hosted on GitHub Pages. Each website is organized in its own folder within the `sites` directory, making it easy to maintain multiple websites in a single repository.
+This repository contains the code for the Precision CNC Solutions company website. It's structured as a GitHub Pages website to showcase the company's CNC machining services, portfolio, and capabilities.
 
 ## Repository Structure
-??? index.html (Main landing page)
-??? README.md
+/
 ??? sites/
-?   ??? cnc-solutions/ (CNC Machining Services website)
-?   ?   ??? index.html
+?   ??? cnc-solutions/          # Main CNC Solutions website
+?   ?   ??? index.html          # Main HTML file
 ?   ?   ??? css/
+?   ?   ?   ??? styles.css      # Stylesheet
 ?   ?   ??? js/
-?   ?   ??? images/
+?   ?   ?   ??? script.js       # JavaScript functionality
+?   ?   ??? images/             # Image assets directory
+?   ?       ??? equipment/      # Equipment images
+?   ?       ??? portfolio/      # Portfolio images
+?   ?       ??? testimonials/   # Client testimonial images
 ?   ?
-?   ??? portfolio-site/ (Portfolio website template)
-?   ?   ??? index.html
-?   ?   ??? css/
-?   ?   ??? js/
-?   ?   ??? images/
-?   ?
-?   ??? [add more websites here]
-## Websites Included
+?   ??? portfolio-site/         # Optional portfolio site
+?       ??? index.html
+?       ??? css/
+?       ??? js/
+?       ??? images/
+?
+??? README.md                   # This documentation file
+## CNC Solutions Website Features
 
-### 1. CNC Solutions Website
-A professional website for a CNC machining services company showcasing their capabilities, services, and portfolio.
+- Responsive design that works on mobile, tablet, and desktop
+- Professional layout suitable for a manufacturing/engineering company
+- Multiple sections including:
+  - Services overview
+  - About the company
+  - Portfolio of work with filtering capabilities
+  - Equipment showcase
+  - Client testimonials
+  - Contact form
+- Interactive elements with JavaScript functionality
+- Mobile-friendly navigation
 
-- **Path:** `/sites/cnc-solutions/`
-- **Technologies:** HTML5, CSS3, JavaScript
-- **Features:** Responsive design, service showcase, portfolio gallery, contact form
+## Technologies Used
 
-### 2. Portfolio Website Template
-A personal portfolio website template for showcasing skills, projects, and professional experience.
+- HTML5
+- CSS3 (with Flexbox and CSS Grid for layout)
+- JavaScript (ES6+)
+- Font Awesome icons
+- Google Fonts (Roboto and Montserrat)
 
-- **Path:** `/sites/portfolio-site/`
-- **Technologies:** HTML5, CSS3, JavaScript
-- **Features:** Skills display, portfolio gallery, contact form
+## Sections
 
-## How to Use This Repository
+1. **Header/Hero** - Bold introduction with call-to-action buttons
+2. **Services** - Grid showcasing CNC machining service offerings
+3. **About Us** - Company background with experience highlights and statistics
+4. **Portfolio** - Filterable gallery of machined components for different industries
+5. **Equipment** - Overview of the company's machinery and technical capabilities
+6. **Testimonials** - Rotating client feedback carousel
+7. **Contact** - Contact form and company information
+8. **Footer** - Company information, quick links, and newsletter signup
 
-### Viewing the Websites
-1. The main landing page at the root directory links to all websites
-2. Each website can be accessed directly via its path: `yourusername.github.io/sites/website-name/`
+## Local Development
 
-### Adding a New Website
-1. Create a new folder in the `sites` directory
-2. Add your HTML, CSS, JS, and other assets to this folder
-3. Update the main `index.html` file to add a link to your new website
-
-### Local Development
-
-To work on these websites locally:
+To work on this website locally:
 
 1. Clone this repository to your local machinegit clone https://github.com/yourusername/yourusername.github.io.git
 2. Navigate to the project foldercd yourusername.github.io
-3. To work on a specific website, navigate to that website's foldercd sites/website-name
-4. Open the site in your web browser by opening `index.html` or using a local server
+3. Open the site in your web browser by opening `sites/cnc-solutions/index.html`
 
-## Deploying to GitHub Pages
+## GitHub Pages Deployment
 
-To deploy this collection to GitHub Pages:
+To make this website accessible at `https://yourusername.github.io/cnc-solutions`:
 
-1. Push your changes to your GitHub repository
+1. Make sure you have committed all your changes to the repository
 2. Go to your GitHub repository settings
 3. Scroll down to the "GitHub Pages" section
 4. Select your main branch as the source
-5. The sites will be published at `https://yourusername.github.io/` and each website will be accessible at its respective path
+5. The site will be published and accessible at `https://yourusername.github.io/sites/cnc-solutions/`
 
 ## Customization
 
-Each website can be customized independently without affecting others:
+To customize this website for your specific needs:
 
-- Replace placeholder images in each website's `images` folder
-- Update text content in each website's `index.html` file
-- Modify styles in each website's CSS files
-- Add functionality through each website's JavaScript files
+- Replace placeholder images in the `sites/cnc-solutions/images/` folders with your own high-quality photos
+- Update text content in `sites/cnc-solutions/index.html` to reflect your company's specific services and information
+- Modify color scheme by changing CSS variables in `:root` in the `sites/cnc-solutions/css/styles.css` file
+- Update contact information and form handling in the contact section
+
+## Required Images
+
+The website requires the following images:
+- `images/hero-bg.jpg` - Hero background image
+- `images/workshop.jpg` - About section workshop image
+- `images/equipment/mill.jpg` - CNC mill image
+- `images/equipment/lathe.jpg` - CNC lathe image
+- `images/equipment/cmm.jpg` - Measuring machine image
+- `images/equipment/cadcam.jpg` - CAD/CAM system image
+- `images/portfolio/` - Various portfolio images (aerospace, automotive, medical, industrial)
+- `images/testimonials/` - Client profile images
+
+## JavaScript Features
+
+- Mobile-friendly navigation menu
+- Scroll-activated navigation highlighting
+- Portfolio category filtering
+- Contact form validation
+- Testimonial slider
+- Newsletter subscription form
+- Back-to-top button
 
 ## License
 
