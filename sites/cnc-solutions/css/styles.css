@@ -224,14 +224,51 @@ ul {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg');
+    /* Fallback gradient background */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    
+    /* Primary background with machinery image */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url('../images/cnc-machinery-bg.png');
+    
+    /* Fallback to original hero image if machinery image not available */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url('../images/cnc-machinery-bg.png'),
+        url('../images/hero-bg.jpg');
+    
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
     color: white;
     margin-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add subtle industrial pattern overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 255, 255, 0.02) 10px,
+            rgba(255, 255, 255, 0.02) 20px
+        );
+    pointer-events: none;
+    z-index: 1;
 }
 
 .hero-content {
@@ -239,12 +276,17 @@ ul {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
     animation: fadeInDown 1s ease;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .hero-content p {
@@ -252,12 +294,23 @@ ul {
     margin-bottom: 30px;
     animation: fadeInUp 1s ease 0.2s;
     animation-fill-mode: both;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-content .btn {
     margin: 0 10px;
     animation: fadeInUp 1s ease 0.4s;
     animation-fill-mode: both;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Services Section */
@@ -733,12 +786,21 @@ footer ul li a:hover {
         gap: 10px;
     }
     
+    .hero {
+        background-attachment: scroll; /* Disable parallax on mobile for better performance */
+    }
+    
     .hero-content h1 {
         font-size: 2.5rem;
     }
     
     .hero-content p {
         font-size: 1.1rem;
+    }
+    
+    .hero-content .btn {
+        margin: 10px 5px;
+        padding: 12px 20px;
     }
     
     .portfolio-filter {
@@ -765,9 +827,28 @@ footer ul li a:hover {
         padding: 10px 20px;
     }
     
+    .logo {
+        padding: 12px 15px;
+    }
+    
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
     .hero-content .btn {
         display: block;
         margin: 10px auto;
         width: 80%;
+        max-width: 250px;
     }
 }
