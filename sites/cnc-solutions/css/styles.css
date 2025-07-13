@@ -224,24 +224,8 @@ ul {
 
 /* Hero Section */
 .hero {
-    /* Fallback gradient background */
+    /* Fallback gradient background if image doesn't load */
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    
-    /* Primary background with machinery image */
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-        url('../images/cnc-machinery-bg.png');
-    
-    /* Fallback to original hero image if machinery image not available */
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-        url('../images/cnc-machinery-bg.png'),
-        url('../images/hero-bg.jpg');
-    
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -249,6 +233,32 @@ ul {
     margin-top: 0;
     position: relative;
     overflow: hidden;
+}
+
+/* Hero background image styling - improved approach */
+.hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    /* Ensure image loads properly */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hero overlay for better text readability */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    z-index: 1;
 }
 
 /* Add subtle industrial pattern overlay */
@@ -268,7 +278,7 @@ ul {
             rgba(255, 255, 255, 0.02) 20px
         );
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero-content {
@@ -277,7 +287,7 @@ ul {
     margin: 0 auto;
     padding: 20px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hero-content h1 {

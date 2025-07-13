@@ -34,6 +34,12 @@
         </nav>
 
         <div class="hero" id="home">
+            <!-- Hero background image - try workshop.png first to test if path works -->
+            <img src="images/cncmachinery.png" alt="CNC Machinery Background" class="hero-bg-image" 
+                 onerror="console.error('Image failed to load:', this.src); this.style.display='none';" 
+                 onload="console.log('Hero background image loaded successfully:', this.src);">
+            <!-- Hero overlay for better text readability -->
+            <div class="hero-overlay"></div>
             <div class="container">
                 <div class="hero-content">
                     <h1>Precision Engineering Excellence</h1>
